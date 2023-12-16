@@ -989,7 +989,12 @@ int order_preparable_ingredients(order *order, int reduce_bool)
     sem_wait(&inventory_lock);
     int res = 1;
     for (int i = 0; i < order->num_toppings; i++)
+    {
+        if (!strcmp(order->toppings[i], ""))
+            continue;
         res = res & get_toppings(order->toppings[i], 1, reduce_bool);
+        // printf("/%s/ %d ", order->toppings[i], res);
+    }
     sem_post(&inventory_lock);
 #ifdef DEBUG
     print_inventory();

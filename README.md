@@ -1,15 +1,21 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/JH3nieSp)
-# OSN Monsoon 2023 mini project 3
-## xv6 revisited and concurrency
+# OSN Mini Project 3
 
-*when will the pain and suffering end?*
+## Concurrency
 
-## Some pointers/instructions
-- main xv6 source code is present inside `initial_xv6/src` directory.
-- Feel free to update this directory and add your code from the previous assignment here.
-- By now, I believe you are already well aware on how you can check your xv6 implementations. 
-- Just to reiterate, make use of the `procdump` function and the `usertests` and `schedulertest` command.
-- work inside the `concurrency/` directory for the Concurrency questions (`Cafe Sim` and `Ice Cream Parlor Sim`).
+Implementing concepts of concurrency, threads, mutexes, condition variables and semaphores.
 
-- Answer all the theoretical/analysis-based questions (for PBS scheduler and the concurrency questions) in a single `md `file.
-- You may delete these instructions and add your report before submitting. 
+
+### Cafe Sim
+
+This is a simulation of a cafe with baristas and multiple customers. 
+
+Each barista can serve only one customer at a time.
+
+
+### Ice Cream Parlor
+
+This is a simulation of an ice cream parlor with multiple icecream making machines and various customers with many orders. 
+
+Each machine can fulfill only one order at a time.
+
+There is limited quantity of each ingredient.
